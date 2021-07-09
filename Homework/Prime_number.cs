@@ -11,8 +11,14 @@ namespace Homework
 
             int d = PrmNumb(n);
 
-            Answer(d, n);
-
+            if (d == 0)
+            {
+                Console.WriteLine($"Число: {n} простое");
+            }
+            else
+            {
+                Console.WriteLine($"Число: {n} Не простое");
+            }
             Console.ReadKey();
         }
 
@@ -31,17 +37,6 @@ namespace Homework
                 i++;
             }
             return d;
-        }
-        static void Answer(int d, int n)
-        {
-            if (d == 0)
-            {
-                Console.WriteLine($"Число: {n} простое");
-            }
-            else
-            {
-                Console.WriteLine($"Число: {n} Не простое");
-            }
         }
     }
 }
